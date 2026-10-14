@@ -1,0 +1,28 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment & credentials
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# Cache & large downloads
+.cache/
+kaggle.json
+
+# Large runtime/output images
+inspection_results/
+validation_dataset/
+
+# Internal docs
+PRD.md
+TODO.md
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
