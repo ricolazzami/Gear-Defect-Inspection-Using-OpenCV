@@ -39,7 +39,7 @@ Live conveyor simulation:
 ./venv/bin/python simulate.py
 ```
 
-## System Architecture (Archify)
+## System Architecture
 
 Interactive HTML: [`architecture.html`](architecture.html) | Static preview:
 
