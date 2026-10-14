@@ -31,6 +31,12 @@
 +-------------------------------------------------------------+
 ```
 
+## Validated Architecture Diagram (Archify)
+
+![Architecture Diagram](architecture.png)
+
+Interactive: [`architecture.html`](architecture.html) (standalone, dark/light themes, SVG)
+
 ## Visual Output Samples
 - **Pass State**: Green header banner `STATUS: PASS - QUALITY VERIFIED`.
 - **Fail State**: Red header banner `STATUS: FAIL - DEFECT DETECTED` with red bounding box annotation around structural anomalies.
