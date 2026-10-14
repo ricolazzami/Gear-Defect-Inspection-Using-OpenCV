@@ -39,12 +39,6 @@ Live conveyor simulation:
 ./venv/bin/python simulate.py
 ```
 
-## System Architecture
-
-Interactive HTML: [`architecture.html`](architecture.html) | Static preview:
-
-![Architecture Diagram](architecture.png)
-
 ## PLC Output Signals
 - `[ PASS: QUALITY VERIFIED ]` -> Gear passes structural tolerance gate.
 - `[ FAIL: STRUCTURAL DEFECT DETECTED ]` -> Gear fails tolerance gate, defect boxed in red.
