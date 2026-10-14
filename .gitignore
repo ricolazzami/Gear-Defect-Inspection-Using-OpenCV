@@ -22,6 +22,11 @@ validation_dataset/
 PRD.md
 TODO.md
 
+# Archify sidecars / visual-check (unused)
+architecture.delivery.json
+architecture.finalize-summary.json
+architecture.visual-check.*
+
 # OS / Editor
 .DS_Store
 .vscode/
