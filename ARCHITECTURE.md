@@ -24,12 +24,18 @@
 |                           OUTPUT                            |
 |  - Tolerance Gate: actual_distance > THRESHOLD_MAX          |
 |  - Visual Marker: Red bounding box around farthest_point   |
+|    and visual status banner (PASS/FAIL)                     |
 |  - PLC Fieldbus Signals:                                    |
 |      * FAIL: [ FAIL: STRUCTURAL DEFECT DETECTED ]           |
 |      * PASS: [ PASS: QUALITY VERIFIED ]                     |
 +-------------------------------------------------------------+
 ```
 
-### Module Responsibilities
+## Visual Output Samples
+- **Pass State**: Green header banner `STATUS: PASS - QUALITY VERIFIED`.
+- **Fail State**: Red header banner `STATUS: FAIL - DEFECT DETECTED` with red bounding box annotation around structural anomalies.
+
+## Module Responsibilities
 - `setup_data.py`: Data ingestion module. Downloads dataset via `kagglehub`, filters structural defects against cosmetic defects, and populates `validation_dataset/`.
-- `main.py`: Real-time inspection engine implementing the full IPO pipeline with OpenCV convex analysis.
+- `main.py`: Real-time batch inspection engine implementing the full IPO pipeline with OpenCV convex analysis.
+- `simulate.py`: Live conveyor belt simulation runner with real-time window display and PLC signal logging.
